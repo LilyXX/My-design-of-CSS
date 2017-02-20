@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>plus</title>
+<style type="text/css">
+*{
+    margin: 50%; 
+}
+.plus {
+    box-sizing : border-box;
+    display    : inline-block;
+    position   : relative;
+    font-size  : 200px;
+    /*background: pink;*/
+}
+ 
+.plus:before, .plus:after {
+    content        : '';
+    pointer-events : none;
+    position       : absolute;
+    left           : 50%;
+    top            : 50%;
+    transform      : translate(-50%, -50%);
+    box-shadow     : inset 0 0 0 1em;
+}
+ 
+.plus:before {
+    width  : 1em;
+    height : 2px;
+}
+ 
+.plus:after {
+    height : 1em;
+    width  : 2px;
+}
+</style>
+</head>
+
+<body>
+<div class="plus"></div>
+</body>
+</html>
